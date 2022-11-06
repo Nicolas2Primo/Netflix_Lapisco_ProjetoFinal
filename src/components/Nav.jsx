@@ -20,7 +20,7 @@ const Nav = ({ scrollPosition }) => {
         scrollPosition > 5
           ? `flex justify-between px-8 py-4 items-center 
              w-screen dark:bg-[#141822] bg-[#EFEFEF] fixed   md:gap-8 z-10`
-          : `flex justify-between px-8 py-4 items-center fixed w-screen   md:gap-8 z-10`
+          : `flex justify-between px-8 py-4 items-center fixed w-screen md:gap-8 z-10`
       }`}
     >
       <div className="flex md:gap-8">
