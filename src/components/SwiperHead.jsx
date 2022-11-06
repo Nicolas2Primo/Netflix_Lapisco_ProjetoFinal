@@ -31,14 +31,14 @@ const SwiperHead = () => {
         loop
         allowTouchMove={false}
         slideToClickedSlide={true}
-        className="  w-[100vw] h-[180px]   "
+        className="  w-[100vw] h-[58vw] md:h-screen   "
       >
         {movies
           .filter((movie, index) => index < 3)
           .map((movie) => (
             <SwiperSlide key={movie.id}>
               <div className=" ">
-                <span className="fixed text-white text-md md:text-5xl font-bold  w-full h-full flex items-end py-7 px-3">
+                <span className="fixed text-white text-md md:text-5xl font-bold  w-full h-full flex items-end py-7 md:py-28 px-3">
                   {movie.name || movie.title}
                 </span>
                 <img

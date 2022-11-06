@@ -1,10 +1,10 @@
 import Switch from "./Switch";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Menu from "./Menu";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { routes } from "../data/api";
 
-const Nav = ({ black }) => {
+const Nav = ({ scrollPosition }) => {
   const openModal = () => {
     setIsOpen(true);
   };
@@ -16,7 +16,11 @@ const Nav = ({ black }) => {
 
   return (
     <div
-      className={`flex justify-between px-8 py-4 items-center fixed w-screen   md:gap-8 z-10`}
+      className={`${
+        scrollPosition > 5
+          ? `flex justify-between px-8 py-4 items-center fixed w-screen dark:bg-[#141822] bg-[#EFEFEF]   md:gap-8 z-10`
+          : `flex justify-between px-8 py-4 items-center fixed w-screen   md:gap-8 z-10`
+      }`}
     >
       <div className="flex md:gap-8">
         <img
@@ -24,7 +28,13 @@ const Nav = ({ black }) => {
           alt=""
           className="max-w-[6rem] max-h-[1.6rem]"
         />
-        <div className="hidden text-md dark:text-[#EFEFEF] gap-8 md:flex">
+        <div
+          className={`${
+            scrollPosition > 5
+              ? `hidden text-md dark:text-[#EFEFEF] text-[#141822] gap-8 md:flex`
+              : `hidden text-md text-[#EFEFEF] gap-8 md:flex`
+          }`}
+        >
           {routes.map((content, index) => (
             <span
               key={index}
