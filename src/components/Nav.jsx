@@ -16,7 +16,7 @@ const Nav = ({ black }) => {
 
   return (
     <div
-      className={`flex justify-between px-8 py-4 items-center relative w-screen backdrop-blur-sm  md:gap-8`}
+      className={`flex justify-between px-8 py-4 items-center fixed w-screen backdrop-blur-sm  md:gap-8 z-10`}
     >
       <div className="flex md:gap-8">
         <img
