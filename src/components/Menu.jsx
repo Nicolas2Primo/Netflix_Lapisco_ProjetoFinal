@@ -13,7 +13,7 @@ const Menu = ({ closeModal, modalIsOpen }) => {
       overLayClassName="modal-overlay"
       className="modal-content outline-none"
     >
-      <div className="w-screen h-screen bg-[#EFEFEF] dark:bg-[#141822] flex flex-row-reverse py-1 px-1">
+      <div className="w-screen h-full bg-[#EFEFEF] dark:bg-[#141822] flex flex-row-reverse py-1 px-1">
         <AiOutlineClose
           size={30}
           onClick={closeModal}
