@@ -5,7 +5,7 @@ import SwiperHead from "./components/SwiperHead";
 
 function App() {
   return (
-    <div className="bg-[#EFEFEF]  w-screen h-screen  dark:bg-[#141822] overflow-x-hidden overflow-y-auto pb-20">
+    <div className=" overflow-x-hidden pb-20">
       <Nav></Nav>
       <div className="flex flex-col gap-6">
         <SwiperHead></SwiperHead>
