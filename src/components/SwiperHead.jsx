@@ -24,14 +24,14 @@ const SwiperHead = () => {
     getMovies(categories[0].path);
   }, [categories[0].path]);
   return (
-    <div className="px-10  sticky">
+    <div className=" sticky">
       <Swiper
         modules={[Autoplay, Navigation]}
         autoplay={{ delay: 5000 }}
         loop
         allowTouchMove={false}
         slideToClickedSlide={true}
-        className="  w-[75vw]  rounded-xl md:rounded-2xl "
+        className="  w-[100vw] h-[180px]   "
       >
         {movies
           .filter((movie, index) => index < 3)
