@@ -18,7 +18,7 @@ function App() {
     };
   }, []);
   return (
-    <div className=" overflow-x-hidden pb-20">
+    <div className=" overflow-x-hidden pb-20 flex flex-col items-center ">
       <Nav handleScroll={handleScroll} scrollPosition={scrollPosition}></Nav>
       <div className="flex flex-col gap-6">
         <SwiperHead></SwiperHead>
