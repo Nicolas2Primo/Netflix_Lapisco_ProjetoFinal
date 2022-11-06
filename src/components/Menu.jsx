@@ -17,7 +17,7 @@ const Menu = ({ closeModal, modalIsOpen }) => {
         <AiOutlineClose
           size={30}
           onClick={closeModal}
-          className="dark:text-[#EFEFEF]"
+          className="dark:text-[#EFEFEF] hidden"
         ></AiOutlineClose>
         <div className="w-screen h-screen flex flex-col items-center justify-center gap-7 dark:text-[#EFEFEF]">
           {routes.map((content, index) => (

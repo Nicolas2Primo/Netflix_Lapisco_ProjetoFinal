@@ -18,7 +18,8 @@ const Nav = ({ scrollPosition }) => {
     <div
       className={`${
         scrollPosition > 5
-          ? `flex justify-between px-8 py-4 items-center fixed w-screen dark:bg-[#141822] bg-[#EFEFEF]   md:gap-8 z-10`
+          ? `flex justify-between px-8 py-4 items-center 
+             w-screen dark:bg-[#141822] bg-[#EFEFEF] fixed   md:gap-8 z-10`
           : `flex justify-between px-8 py-4 items-center fixed w-screen   md:gap-8 z-10`
       }`}
     >
@@ -52,7 +53,7 @@ const Nav = ({ scrollPosition }) => {
         <GiHamburgerMenu
           size={25}
           className="dark:text-[#EFEFEF] md:hidden"
-          onClick={openModal}
+          onClick={modalIsOpen ? closeModal : openModal}
         ></GiHamburgerMenu>
       </div>
       <Menu closeModal={closeModal} modalIsOpen={modalIsOpen}></Menu>
