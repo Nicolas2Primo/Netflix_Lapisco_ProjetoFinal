@@ -20,7 +20,7 @@ const Nav = ({ black }) => {
     >
       <div className="flex md:gap-8">
         <img
-          src="src\assets\netflix.893e75f16bfa595cd8a2.png"
+          src="/netflix.893e75f16bfa595cd8a2.png"
           alt=""
           className="max-w-[6rem] max-h-[1.6rem]"
         />
