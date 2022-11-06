@@ -41,8 +41,8 @@ const MovieInfo = ({ closeModal, modalIsOpen, movie }) => {
                 className=" w-52 h-84 rounded-2xl "
               />
             </SwiperSlide>
-            <SwiperSlide className="h-full w-screen justify-center items-center flex hover:cursor-pointer overflow-y-auto">
-              <span className="font-bold text-[12px] dark:text-[#EFEFEF] text-[#141822] text-center">
+            <SwiperSlide className="h-full w- justify-center items-center flex hover:cursor-pointer overflow-y-auto ">
+              <span className="font-bold text-[11px] dark:text-[#EFEFEF] text-[#141822] text-center">
                 {movie.info}
               </span>
             </SwiperSlide>
