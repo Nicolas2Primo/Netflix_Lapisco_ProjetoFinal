@@ -17,6 +17,7 @@ function App() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <div className=" overflow-x-hidden pb-20 flex flex-col items-center ">
       <Nav handleScroll={handleScroll} scrollPosition={scrollPosition}></Nav>
